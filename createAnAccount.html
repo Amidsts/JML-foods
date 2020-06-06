@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Login_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Piedra&display=swap" rel="stylesheet">
+    <title>createAnAccount</title>
+</head>
+<body>
+    
+    <header class="fixedHeader">
+        <img src="logo.jpeg" alt="Logo">
+        <h1>PROVIDING YOUR BASIC NEEDS...</h1>
+        <img src="food.jpeg" alt="food">
+    </header>
+
+    <section class="informations">
+
+        <form action="#" method="POST">
+
+                <div class="information1">
+
+                        <header class="header2">Sponsor Information</header>
+                        <p class="radio"> <input type="radio" name="Manual"> Manual </p>
+                        <p class="text"> <span>*</span>Sponsor ID <input type="number" id="ID" name="Sponsor ID" value="number">  </p>
+
+                        <p class="text"> <span>*</span>Sponsor Name <input type="text" name="SponsorName" id="SponsorName">  </p>
+                        
+                        <p class="checkbox"> <input type="checkbox" id="sponsorID" name="NoSponsor" onClick="sponsorID()" id="NoSponsor"> Select if you dont have sponsor.</p>
+
+                </div>
+
+                <div class="information2">
+
+                        <header class="header3">User Information</header>
+                        <p class="text"> <span>*</span>Username <input type="text" name="Username"></p>
+                        <p> <span>*</span>Password <input type="password" name="Password"></p>
+                        <p> <span>*</span>Confirm Password <input type="password" name="Confirm Password"></p>
+                
+                </div>
+
+                <div class="information3">
+
+                    <header class="header4">Payment & E-Pin</header>
+                    <p>
+                        <span>*</span> Select Paymode 
+                        <select name="Payment" id="#">
+                            <optgroup label="Select Paymode">
+
+                                <option value="Paystack">Paystack</option>
+                                <option value="Bank">Bank</option>
+                                
+                            </optgroup>
+                        </select>
+                    </p>
+                    <span>
+                        Package Amount$ 23.00
+                    </span>
+
+                </div>
+
+                <div class="information4">
+                    <header class="header5">Personal Information</header>
+                    <p class="select">
+                        <span>*</span>Title 
+                        <select name="Title" id="#">
+                            <optgroup label="Title">
+
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Miss">Miss</option>
+                                
+                            </optgroup>
+                        </select>
+                    </p>
+                        <p><span>*</span>Mobile No <input type="number" name="MobileNo"> </p>
+                        <p><span>*</span>Email ID <input type="email" name="EmailID"></p>
+                </div>
+
+                <div class="information5">
+                    <header class="header6">Contact Information</header>
+                    <p class="text"><span>*</span>Postal address <input type="text" name="PostalAddress"></p>
+                    <p>
+                        <span>*</span>Country 
+                        <select name="Country " id="#">
+                            <optgroup label="Country ">
+
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Ghana">Ghana</option>
+                                
+                                
+                            </optgroup>
+                        </select>
+                    </p>
+                    <p><span>*</span>State/Province <input type="text" placeholder="Change State /Province" name="State/Province"></p>
+                    <p><span>*</span>City <input type="text" placeholder="Change City" name="City"></p>
+                    <p>Zip Code <input type="text" name="Zip Code "></p>
+                </div>
+
+                <div class="information6">
+                    <header class="header7">Bank Information</header>
+                    <p class="input" ><span>*</span>Account Holders Name <input type="text" name="AccountHoldersName"></p>
+                    <p><span>*</span>Account No <input type="number" name="Account No"></p>
+                    <p><span>*</span>Bank Name <input type="text" name="Bank Name"></p>
+                    <p><span>*</span>Branch Name <input type="text" name="Branch Name"></p>
+                    <p><span>*</span>Bank Address <textarea id="bank" cols="30" rows="10" name="Bank Address"></textarea></p>
+                    <p><span>*</span>Swift Code <input type="number" name="Swift Code"></p>
+                </div>
+
+         </form>
+
+     </section>
+
+                <footer>
+                    <p> <input type="checkbox" name="Terms & Conditions"><a href="#">*Accept Terms & Conditions</a></p>
+                    <p><input type="submit" class="Continue" name="ContinueRegistration" value="Continue Registration"></p>
+                </footer>
+
+            
+
+    <script>
+    //     document.getElementById("ID").addEventListener('click', function (){
+    //     document.querySelector("input[name=sponsorID]").display=  math.floor((math.random()*10000)+1);
+    // })
+        // document.querySelector("input[name=sponsorID]").addEventListener(
+        //     "click", function () {
+        //         math.floor((math.random()*10000)+1);
+        //     }
+        // )
+    
+        // function myFunction(){
+        //     document.getElementById("sponsorID").innerHTML=math.floor((math.random()*10000)+1);
+       
+
+        document.getElementById("sponsorID").onchecked=function() {
+            document.getElementById("ID").innerHTML=math.floor((math.random()*10000)+1)}
+    </script>
+</body>
+</html>

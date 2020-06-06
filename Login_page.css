@@ -1,0 +1,281 @@
+
+/* @media screen and (min-width: 480px) {
+    
+} */
+
+body{
+    background-color: blanchedalmond;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+.fixedHeader{
+    color: red;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+   width: 100%;
+
+}
+
+.fixedHeader img{
+   max-width: 10em;
+    border-radius: 50%;
+}
+
+.fixedHeader h1{
+    font-size: 3em;
+    font-weight: 900;
+  font-family: 'Chelsea Market', cursive;
+  font-family: 'Piedra', cursive;
+}
+
+.loginPage{
+    background-color: white;
+    height:22em;
+    width: 30em;
+    margin: 12em auto 0 auto;
+    border-radius: 5px;
+    padding: 2.5em 0 0 0;
+    color: rgb(165, 164, 164);
+}
+
+.loginPage form{
+    height: 16em;
+    width:27em ;
+    margin: 0 auto;
+
+}
+
+
+
+.myPassword {
+    text-decoration: none;
+    color: red;
+
+}
+
+.header1{
+    font-size: 2em;
+    margin-bottom: 7px;
+    color: rgb(87, 85, 85);
+}
+
+.userName, #passWord{
+    display: block;
+    padding: 10px 0 10px 1.5em;
+    margin: 1em 0;
+    outline: none;
+    width: 30.5em;
+
+}
+
+.userName:focus, #passWord:focus{
+    background-color: rgba(219, 207, 207, 0.787);
+    
+}
+
+.userName::placeholder, #passWord::placeholder{
+    font-size: 1.5vw;
+}
+
+
+.icon1{
+    color:rgb(50,54,91) ;
+}
+
+.icon1, .icon2, .eye{
+    padding: 9px 5px;
+    position: absolute;
+}
+
+.icon2{
+    margin-top: 4px;
+}
+.eye{
+    position: absolute;
+    right: 29em;
+    padding: 9px 5px;
+    color: rgb(2, 2, 246);
+
+}
+
+.passWord{
+    margin-top: 2em;
+}
+
+.signIn{
+    margin: 1em 0;
+}
+
+.icon3{
+    position: absolute;
+    margin:9px 0 0 3.7em;
+   
+}
+
+.button{
+    margin-left: 11.5em;
+}
+
+.button1{
+   
+    padding: 9px 1.1em 9px 0;
+    background-color:rgb(50,54,91) ;
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 254, 254);
+    width: 6em;
+}
+.createAccount{
+    margin-top: 2em;
+    
+}
+.createAccount a{
+    text-decoration: none;
+    color: red;
+}
+span, .userName::placeholder, .passWord::placeholder{
+    color:rgb(87, 84, 84) ;
+}
+
+/* forgotPassword*/
+.forgotPassword{
+    height: 16em;
+    width: 32em;
+    background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(165, 164, 164);
+    margin: 15em auto;
+    border-radius: 5px;
+}
+.forgot{
+    font-size: 2em;
+    margin-bottom: 7px;
+    color: rgb(87, 85, 85);
+    padding: 1.2em 0 0 0;
+}
+.logIn, .submit{
+    padding: 9px 1.2em;
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 254, 254);
+    margin-top: 2em;
+}
+.forgotPassword form{
+    height: 16em;
+    width:27em ;
+    margin: 0 auto;
+}
+
+.forgotPassword .inputField .icon4{
+    position: absolute;
+    margin: 10px 0 0 5px;
+}
+
+.submit{
+    margin-left: 21.3em;
+    background-color: rgb(50,54,91) ;
+}
+.logIn{
+    background-color: rgb(65, 64, 64);
+  
+}
+
+/*createAnAccount*/
+
+.informations{
+    width: 82em;
+    margin: 12em auto;
+}
+
+.information1, .information4{
+height: 17em;
+background-color: white;
+}
+
+.header2, .header3, .header4, .header5, .header6, .header7{
+    background-color:rgb(50,54,91) ;
+    height: 1em;
+    font-size: 1.6em;
+    color: white;
+    padding: 4px 0 10px 7px;
+    border-radius: 5px 5px 0 0;
+}
+
+.information1 p, .information2 p, .information3 span, .information4 p, .information5 p, .information6 p{
+    margin-left:30em ;
+    color: rgb(27, 27, 27);
+}
+
+.information1 .radio, .information2 .text, .information3 p, .information4 .select, .information5 .text, .information6 .input{
+    margin-top: 2.5em;
+}
+
+.information1 .text input, .information2 p input,.information4 p select, .information4 p input, .information5 p select, .information5 p input, .information6 p input{
+    padding: 10px;
+    width: 30em;
+
+}
+
+.information2, .information4{
+    background-color: white;
+    margin-top: 2em;
+    height: 17em;
+}
+
+.information3{
+    margin-top: 2em;
+    height: 10em;
+    background-color: white;
+}
+.information5{
+    height: 23em;
+    background-color: white;
+    margin-top: 2em;
+}
+
+.information6{
+    height: 27.5em;
+    background-color: white;
+    margin-top: 2em;
+}
+
+.information6 textarea{
+    height: 4em;
+    width: 31.5em;
+}
+.information1 p span, .information2 p span, .information3 p span, .information4 p span, .information5 p span, .information6 p span{
+    color: red;
+}
+
+.informations footer{
+    margin: 1em 0 0 37em;
+}
+
+.informations footer .Continue{
+    padding: 9px 1.5em;
+    border-radius: 5px;
+    background-color:rgb(50,54,91) ;
+    color: white;
+    outline: none;
+    font-size: 1em;
+}
+.informations footer a{
+    color: red;
+    text-decoration: none;
+}
+ /*Terms and conditions*/
+ .TermsAndConditions{
+     margin-top: 14em;
+ }
+
+
+
+/* *{
+    border: 1px solid red;
+} */

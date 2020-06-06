@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Login_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Piedra&display=swap" rel="stylesheet">
+    <title>Login_page</title>
+</head>
+<body>
+    
+    <header class="fixedHeader">
+        <img src="logo.jpeg" alt="logo">
+        <h1 class="">PROVIDING YOUR BASIC NEEDS...</h1>
+        <img src="food.jpeg" alt="food">
+    </header>
+
+     <section class="loginPage">
+
+        <form action="#" method="POST">
+
+            <p class="header1">Sign in to your account</p> 
+            <span> please enter your name and password to log in. </span><br>
+
+            <div class="inputField">
+                <i class="fa fa-user icon1"></i>
+                <input type="text" placeholder="Username" class="userName" name="userName">
+            </div>
+
+            <a href="forgotPassword.html" class="myPassword" >I forgot my password</a>
+        
+            <div class="inputField">
+                <i class="fa fa-lock icon2"></i>
+                <i class="fa fa-eye eye" id="showPassword" onClick="viewPassword()" onKeyup="validatePassword()"></i>
+                <input type="password" placeholder="Password" id="passWord" name="password">
+            
+            </div>
+
+            <div id="validation-text"> </div>
+
+            <div class="signIn">
+                <input type="checkbox" class="checkbox" name="SignIn"> Keep me signed in  
+
+                <span class="button">
+                    <i class="fa fa-arrow-circle-right icon3" ></i>
+                <input type="submit"  class="button1" value="Sign In" name="Sign In">
+                </span>
+                
+            </div >
+            <p class="createAccount">
+            <span> Dont't have an account yet? </span> <a href="createAnAccount.html"> Create an account </a>
+            </p>
+        
+        </form>
+
+    </section>
+
+    <script src="loginPage.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 14px;
+            position: relative;
+            right: 25px;
+            top: 5px;
+
+        }
+
+        img:hover {
+            cursor: pointer;
+        }
+
+        p input {
+            padding: 5px 8px;
+            width: 50%;
+        }
+
+        div button {
+            position: relative;
+            right: 43px;
+            padding: 5px 2px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background-color: #fff;
+            border-left: 1px solid #666;
+        }
+        *{
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <H1>ONCLICK TIMER</H1>
+    <p>
+        <input type="text" placeholder="Name">
+        <p style="position: relative;">
+            <input type="password" placeholder="Passowrd" id="pass">
+            <img src="user-icon.PNG" alt="" id="t">
+        </p>
+    </p>
+    <div>
+        <h1>
+            ONCLICK OPEN ***************** ONCLICK CLOSE
+        </h1>
+
+        <P>
+            <input type="text" name="" id="" placeholder="Name">
+        </P>
+        <p>
+            <input type="password" id="secret" placeholder="Password">
+            <button id="toggler" onclick="see_secret()">Show</button>
+        </p>
+    </div>
+
+    <script>
+        document.getElementById("t").addEventListener("click", check)
+
+        function check() {
+            var view = document.getElementById("pass");
+            view.type = "text"
+            see_time()
+        };
+
+        function back() {
+            var view = document.getElementById("pass");
+            view.type = "password"
+
+        };
+
+        function see_time() {
+            setTimeout(back, 1000)
+        }
+
+
+        /*********************ONCLICK VIEW -----  ONCLICK UNVIEW ***************************************/
+        var see = document.getElementById("secret");
+        var toggler = document.getElementById("toggler");
+
+        function see_secret() {
+
+            if (toggler.innerHTML == "Show") {
+                see.type = "text"
+                toggler.innerHTML = "Hide"
+            } else {
+                see.type = "password"
+                toggler.innerHTML = "Show"
+            }
+
+        }
+    </script>
+</body>
+
+</html>
